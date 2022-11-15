@@ -13,12 +13,12 @@ class CartTotal extends StatelessWidget {
         //TODO
         // aquí debemos observar la variable total del shoppingController
         child: Obx(
-          () => Text(shoppingController.total.toString() + 'Total:',
-              style: const TextStyle(
-                  fontSize: 25.0,
-                  color: Colors.blueGrey,
-                  letterSpacing: 2.0,
-                  fontWeight: FontWeight.w400)),
+          () => Text('Total: ' + shoppingController.total.toString() + ' usd',
+                style: const TextStyle(
+                fontSize: 25.0,
+                color: Colors.blueGrey,
+                letterSpacing: 2.0,
+                fontWeight: FontWeight.w400)),
         ),
       ),
     );
